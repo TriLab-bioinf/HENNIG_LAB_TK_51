@@ -1,0 +1,8 @@
+# Path to directory with raw fastq files 
+READ_PATH=./data/SRA_05082023
+
+# File with sample prefixes (one per row)
+SAMPLE_FILE=./sample_prefix.txt
+
+# Log directory
+LOG_DIR=./00_05122023_logs

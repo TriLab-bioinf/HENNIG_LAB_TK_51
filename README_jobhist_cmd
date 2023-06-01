@@ -1,0 +1,1 @@
+for i in $(cat duplication_round2.slurm_ids); do jobhist $i ; done

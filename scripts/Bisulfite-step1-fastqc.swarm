@@ -1,0 +1,4 @@
+#SWARM --threads-per-process 4 --gb-per-process 4
+
+sh ./scripts/Bisulfite-step1-fastqc.sh ${READ_PATH}/${SAMPLE}.R1.fastq.gz ${READ_PATH}/${SAMPLE}.R2.fastq.gz ${LOG_DIR}/${SAMPLE}.Bisulfite-step1-fastqc.log
+

@@ -1,0 +1,4 @@
+#SWARM --threads-per-process 8 --gb-per-process 16
+
+sh ./scripts/Bisulfite-step2-trimming.sh ${READ_PATH}/${SAMPLE}.R1.fastq.gz ${READ_PATH}/${SAMPLE}.R2.fastq.gz ${LOG_DIR}/${SAMPLE}.Bisulfite-step2-trimming.log
+

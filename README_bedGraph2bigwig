@@ -1,0 +1,1 @@
+for SAMPLE in $(cat sample_prefix.txt); do echo Processing ${SAMPLE}; gunzip -c ${SAMPLE}.bismark_bt2_pe.nonCG_filtered.paired_only.deduplicated.bedGraph.gz > tmp.bedGraph; bedGraphToBigWig tmp.bedGraph mm10_chrom_sizes ${SAMPLE}.bismark_bt2_pe.nonCG_filtered.paired_only.deduplicated.bw; rm -f tmp.bedGraph; done

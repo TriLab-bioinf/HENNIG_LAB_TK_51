@@ -1,0 +1,9 @@
+#SWARM --partition=norm --threads-per-process 16 --time=100:00:00 --exclusive --gb-per-process 32  --gres=lscratch:350
+
+sh ./scripts/Bisulfite-step3-bismark_2.sh ${SPLIT_PATH}/${SAMPLE}.R1_val_1.part_001.fq.gz ${SPLIT_PATH}/${SAMPLE}.R2_val_2.part_001.fq.gz ${SAMPLE} ${LOG_DIR} 
+sh ./scripts/Bisulfite-step3-bismark_2.sh ${SPLIT_PATH}/${SAMPLE}.R1_val_1.part_002.fq.gz ${SPLIT_PATH}/${SAMPLE}.R2_val_2.part_002.fq.gz ${SAMPLE} ${LOG_DIR}
+sh ./scripts/Bisulfite-step3-bismark_2.sh ${SPLIT_PATH}/${SAMPLE}.R1_val_1.part_003.fq.gz ${SPLIT_PATH}/${SAMPLE}.R2_val_2.part_003.fq.gz ${SAMPLE} ${LOG_DIR}
+sh ./scripts/Bisulfite-step3-bismark_2.sh ${SPLIT_PATH}/${SAMPLE}.R1_val_1.part_004.fq.gz ${SPLIT_PATH}/${SAMPLE}.R2_val_2.part_004.fq.gz ${SAMPLE} ${LOG_DIR}
+sh ./scripts/Bisulfite-step3-bismark_2.sh ${SPLIT_PATH}/${SAMPLE}.R1_val_1.part_005.fq.gz ${SPLIT_PATH}/${SAMPLE}.R2_val_2.part_005.fq.gz ${SAMPLE} ${LOG_DIR}
+
+
