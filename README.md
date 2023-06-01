@@ -1,8 +1,14 @@
 ### HENNIG_LAB_TK_51
 
+To use this workflow ,  first you have to edit the config file config.txt to include the following information:
+
+ A: Path to directory with raw fastq files
+ B: File with sample prefixes (one per row)
+ C: Log directory
+
 The BS-seq pipeline is run with the script *run_BSseq_workflow.sh* as follows:
 ```
-run_BSseq_workflow.sh <step number> [config file]
+run_BSseq_workflow.sh <step number>
 ```
 Where available step options are:
 
